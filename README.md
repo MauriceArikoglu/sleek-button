@@ -1,4 +1,6 @@
 [![header](https://github.com/MauriceArikoglu/sleek-button/blob/master/Assets/SleekButton.png)](https://github.com/MauriceArikoglu/sleek-button/blob/master/Assets/SleekButton.png)
+
+- ![Pod Version](http://img.shields.io/cocoapods/v/SleekButton.svg?style=flat)
 # Sleek Button
 
 SleekButton is a drop-in class replacing the boring default UIButton..
