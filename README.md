@@ -23,22 +23,30 @@ SleekButton is a drop-in class replacing the boring default UIButton..
 
 **Code**
 -----
-Basically every advantage _SleekButton_ has over the default UIButton (it's really just more fancy), can be configured and edited.
+Basically every advantage* _SleekButton_ has over the default UIButton, can be configured and edited.
 
-    //set the Gradient Colors. Per default SleekButton's gradient is created with two colors, gradientLightColor and gradientDarkColor - the gradient is always flowing from light to dark. You can easily add your own gradient though. SleekButton's layer is of type CAGradientLayer. So it is super easy to override the defaults and manage the gradient yourself.
-    self.completeProfileButton.gradientLightColor = [UIColor colorWithRed:1.0 green:184.0/255.0 blue:140.0/255.0 alpha:1.0];
-    self.completeProfileButton.gradientDarkColor = [UIColor colorWithRed:222.0/255.0 green:98.0/255.0 blue:98.0/255.0 alpha:1.0];
+    //set the Gradient Colors. Per default SleekButton's gradient is created with two colors, 
+    //gradientLightColor and gradientDarkColor - the gradient is always flowing from light to dark. 
+    //You can easily add your own gradient though. SleekButton's layer is of type CAGradientLayer. 
+    //So it is super easy to override the defaults and manage the gradient yourself.
+    self.completeProfileButton.gradientLightColor = UIColor.blackColor;
+    self.completeProfileButton.gradientDarkColor = UIColor.lightGrayColor;
     
     //there are 5 gradient styles. The default is SleekGradientNoGradient, which, obviously, draws no gradient at all
     self.completeProfileButton.gradientStyle = SleekGradientLeftToRight;
 
-    //you can easily configure if a cornerRadius should be drawn and what cornerRadius should be set. Default is no corner, so remember to set the cornerRadius and allow SleekButton to draw corners. We don't want to live in a squared world
+    //you can easily configure if a cornerRadius should be drawn and what cornerRadius should be set. 
+    //Default is no corner, so remember to set the cornerRadius and allow SleekButton to draw corners. 
+    //We don't want to live in a squared world
     self.completeProfileButton.shouldDrawCornerRadius = YES;
     self.completeProfileButton.cornerRadius = 11.0f;
 
-    //set if you want the predefined drop shadow to be drawn (color is the same as gradientDarkColor, it looks really good, I promise)
+    //set if you want the predefined drop shadow to be drawn (color is the same as gradientDarkColor, 
+    //it looks really good, I promise)
+    //you can always add your own shadow as well though
     self.completeProfileButton.shouldDrawDropShadow = YES;
     
     //set if you want that super fancy title expanding / shrinking (yes, yes, you want it)
     self.completeProfileButton.shouldAnimateTitle = YES;
     
+*(it's really just more fancy)
